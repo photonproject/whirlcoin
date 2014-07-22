@@ -142,8 +142,8 @@ OBJS= \
     obj/noui.o \
     obj/leveldb.o \
     obj/txdb.o\
-    obj/whirlpool.o \
-    obj/groestl.o
+    obj/whirlpool.o 
+    
 
 
 	
