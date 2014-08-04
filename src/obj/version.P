@@ -1,4 +1,4 @@
 obj/version.o: version.cpp version.h clientversion.h \
- /root/whirlcoin/src/obj/build.h
+ /home/liam/Documents/whirlcoin/src/obj/build.h
 version.cpp version.h clientversion.h :
- /root/whirlcoin/src/obj/build.h :
+ /home/liam/Documents/whirlcoin/src/obj/build.h :

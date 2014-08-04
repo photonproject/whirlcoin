@@ -1107,6 +1107,10 @@ double static GetBlockValue(int nHeight, int64 nFees, unsigned int nBits)
         nSubsidy = 3400000;
     }
 
+    if (block > 2800000){
+        nSubsidy = 10;
+    }
+
     nSubsidy *= COIN;
 
     return nSubsidy + nFees;
