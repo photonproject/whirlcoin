@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = WhirlCoin-qt
 macx:TARGET = "WhirlCoin-Qt"
-VERSION = 0.8.9
+VERSION = 2.1.0.7
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
@@ -18,15 +18,21 @@ CONFIG += thread
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
-#win32:BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
-#win32:BOOST_INCLUDE_PATH=C:/db/boost_1_55_0
-#win32:BOOST_LIB_PATH=C:/db/boost_1_55_0/stage/lib
-#win32:BDB_INCLUDE_PATH=C:/db/db-4.8.30.NC/build_unix
-#win32:BDB_LIB_PATH=C:/db/db-4.8.30.NC/build_unix
-#win32:OPENSSL_INCLUDE_PATH=C:/db/openssl-1.0.1g_32/include
-#win32:OPENSSL_LIB_PATH=C:/db/openssl-1.0.1g_32
-#win32:MINIUPNPC_INCLUDE_PATH=C:/db/
-#win32:MINIUPNPC_LIB_PATH=C:/db/miniupnpc
+#if building on windows uncomment these lines the assume the necessary files are in the directories change them if neceessary
+
+#BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_55
+#BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
+#BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+#BDB_INCLUDE_PATH=c:/deps/db/build_unix
+#BDB_LIB_PATH=c:/deps/db/build_unix
+#OPENSSL_INCLUDE_PATH=c:/deps/openssl-1.0.1j/include
+#OPENSSL_LIB_PATH=c:/deps/openssl-1.0.1j
+#MINIUPNPC_LIB_SUFFIX=-miniupnpc
+#MINIUPNPC_INCLUDE_PATH=C:/deps/miniupnpc
+#MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+#QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
+#QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
+#LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.14
 
 OBJECTS_DIR = build
 MOC_DIR = build
