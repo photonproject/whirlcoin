@@ -1,34 +1,3 @@
-src/*.exe
-src/skeincoin
-src/skeincoind
-src/test_skeincoin
-.*.swp
-*.*~*
-*.bak
-*.rej
-*.orig
-*.o
-*.patch
-.skeincoin
-
-# Compilation and Qt preprocessor part
-*.qm
-Makefile
-skeincoin-qt
-Skeincoin-Qt.app
-
-# Unit-tests
-Makefile.test
-skeincoin-qt_test
-
-# Resources cpp
-qrc_*.cpp
-
-# Qt creator
-*.pro.user
-
-# Mac specific
-.DS_Store
-build
-
-!src/leveldb-*/Makefile
+.ts linguist-language=c_cpp
+100.00% c_cpp
+src/version.cpp export-subst
